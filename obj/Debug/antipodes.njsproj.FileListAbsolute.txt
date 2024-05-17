@@ -1,0 +1,3 @@
+C:\Users\Wills\source\repos\antipodes\antipodes\obj\Debug\antipodes.njsproj.AssemblyReference.cache
+C:\Users\Wills\source\repos\antipodes\antipodes\obj\Debug\antipodes.njsproj.CoreCompileInputs.cache
+C:\Users\Wills\source\repos\antipodes\antipodes\bin\Microsoft.NodejsTools.WebRole.dll
