@@ -1,4 +1,4 @@
-# antipodes
+# Antipodes
 
 A JavaScript application that displays the opposite side of the Earth to where the user clicks
 
