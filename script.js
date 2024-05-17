@@ -26,10 +26,24 @@ document.addEventListener('DOMContentLoaded', function () {
             Longitude: ${antipodalLon}
         `;
 
+        // Add a popup at the click location
         var popup = L.popup()
             .setLatLng(e.latlng)
             .setContent(popupContent)
             .openOn(map);
+
+        // Add a red marker at the initial click location
+        var initialMarker = L.marker([lat, lon]).addTo(map);
+
+
+        // Add a popup to the initial marker
+        initialMarker.bindPopup(`Initial Point<br>Latitude: ${lat}<br>Longitude: ${lon}`).openPopup();
+
+        // Add a marker at the antipodal location
+        var antipodalMarker = L.marker([antipodalLat, antipodalLon]).addTo(map);
+
+        // Add a popup to the antipodal marker
+        antipodalMarker.bindPopup(`Antipodal Point<br>Latitude: ${antipodalLat}<br>Longitude: ${antipodalLon}`).openPopup();
     }
 
     // Add a click event listener to the map
